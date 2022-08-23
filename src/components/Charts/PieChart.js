@@ -24,9 +24,13 @@ const PieChart = () => {
             'rgba(75, 192, 192, 1)',
             'rgba(54, 162, 235, 1)',
           ],
-        }]
+        }],
       };
+      const style = {
+        
+      }
       const options = {
+        responsive: true,
         plugins: {
             title: {
                 display: true,
@@ -49,14 +53,14 @@ const PieChart = () => {
 
     return ( 
         <Wrapper>
-            <Pie options={options} data={data}/>
+            <Pie width='80px' style={style} options={options} data={data}/>
         </Wrapper>
      );
 }
 
 const Wrapper = styledComponents.section`
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

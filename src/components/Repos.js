@@ -28,7 +28,7 @@ const Wrapper = styledComponents.section`
             gap: 1rem
         }
     }
-    @media only screen and (max-width: 950px){
+    @media only screen and (max-width: 750px){
         width: 90%;
         .repos-upper{
             display: grid;

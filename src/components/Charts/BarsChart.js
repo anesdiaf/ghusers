@@ -64,7 +64,7 @@ const BarsChart = () => {
 
 const Wrapper = styledComponents.section`
     width: 100%;
-    height: 20rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
