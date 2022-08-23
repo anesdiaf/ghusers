@@ -1,4 +1,4 @@
-export default [
+const reposMock = [
   {
     id: 65004971,
     node_id: "MDEwOlJlcG9zaXRvcnk2NTAwNDk3MQ==",
@@ -9322,3 +9322,6 @@ export default [
     default_branch: "master"
   }
 ]
+
+
+export default reposMock;
