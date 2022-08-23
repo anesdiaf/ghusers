@@ -10,7 +10,6 @@ const Navbar = () => {
     const [isUserBar, setIsUserBar] = useState(false);
 
     useEffect(() => {
-        console.log(user);
         window.addEventListener("scroll", () => {
             const nav = document.querySelector('nav');
             if(window.scrollY === 0){
