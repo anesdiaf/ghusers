@@ -40,7 +40,7 @@ const Navbar = () => {
                 </>
             ): (
                 <div>
-                    <button onClick={() => loginWithRedirect()} className="bg-violet-600 hover:bg-violet-600/90 text-white px-4 py-1 rounded-md transition">Login</button>
+                    <button onClick={() => loginWithRedirect()} className="bg-violet-600 hover:bg-violet-600/90 text-white px-6 py-1 rounded-md transition">Login</button>
                 </div>
             )}
 

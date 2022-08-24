@@ -37,7 +37,7 @@ const Wrapper = styledComponents.section`
     .followers{
         display: flex;
         flex-direction: column;
-        gap: 1rem 0;
+        gap: .4rem 0;
         overflow: hidden;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -46,6 +46,13 @@ const Wrapper = styledComponents.section`
         display: flex;
         align-items: center;
         gap: 0 1rem;
+        background-color: #f1f1f1;
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+        transition: ease .2s
+    }
+    .follower:hover{
+        box-shadow: 2px 2px 8px -4px #a3a3a3
     }
     .follower img {
         width: 4rem;

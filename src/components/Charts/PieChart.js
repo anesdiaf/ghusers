@@ -53,7 +53,7 @@ const PieChart = () => {
 
     return ( 
         <Wrapper>
-            <Pie width='80px' style={style} options={options} data={data}/>
+            <Pie style={style} options={options} data={data}/>
         </Wrapper>
      );
 }
