@@ -39,8 +39,6 @@ const Wrapper = styledComponents.section`
         flex-direction: column;
         gap: .4rem 0;
         overflow: hidden;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
     }
     .follower{
         display: flex;
@@ -49,7 +47,8 @@ const Wrapper = styledComponents.section`
         background-color: #f1f1f1;
         padding: 0.4rem;
         border-radius: 0.4rem;
-        transition: ease .2s
+        transition: ease .2s;        
+        overflow-x: scroll;
     }
     .follower:hover{
         box-shadow: 2px 2px 8px -4px #a3a3a3
