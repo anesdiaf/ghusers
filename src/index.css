@@ -23,6 +23,14 @@ body {
   border-radius: 3px;
 }
 
+.follower::-webkit-scrollbar {
+  height: .4em;
+}
+ 
+.follower::-webkit-scrollbar-thumb {
+  background-color: #10b981;
+  border-radius: 3px;
+}
 
 .lds-ellipsis {
   display: inline-block;

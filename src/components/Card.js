@@ -14,7 +14,7 @@ const Card = () => {
                     <img className="hove:ring-[2px] ring-offset-2 ring-offset-white" src={avatar_url} alt={name} />
                     <div>
                         <p className="text-lg font-semibold">{name}</p>
-                        <p className="text-lg text-[#919191]">@{login}</p>
+                        <p className="text-[#919191]">@{login}</p>
                     </div>
                 </div>
                 <a href={html_url} target="_blank" rel="noopener noreferrer"><button>Follow</button></a>
