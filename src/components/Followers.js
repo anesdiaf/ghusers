@@ -8,8 +8,7 @@ const Followers = () => {
 
     return ( 
         <Wrapper>
-           <div className="section-title"></div>
-           <div className="scroll-div h-[100%] overflow-x-clip overflow-y-scroll p-4">
+           <div className="scroll-div h-[100%] overflow-x-clip overflow-y-scroll">
            <div className="followers">
                {followers.map((item, index) => {
                 const { avatar_url, html_url, login, id} = item;
@@ -33,25 +32,27 @@ const Wrapper = styledComponents.section`
     width: 100%;
     max-height: 20rem;
     background-color: white;
-    box-shadow: 0rem 0rem .4rem .1rem #f1f1f1;
+    border-radius: 1rem;
+    overflow: hidden;
     .followers{
         display: flex;
         flex-direction: column;
-        gap: .4rem 0;
+        gap: .6rem 0;
         overflow: hidden;
+        padding: .6rem
     }
     .follower{
         display: flex;
         align-items: center;
         gap: 0 1rem;
-        background-color: #f1f1f1;
-        padding: 0.4rem;
-        border-radius: 0.4rem;
+        background-color: #f3f4f6;
+        padding: .6rem .8rem;
+        border-radius: .6rem;
         transition: ease .2s;        
         overflow-x: scroll;
     }
     .follower:hover{
-        box-shadow: 2px 2px 8px -4px #a3a3a3
+        box-shadow: 2px 2px 8px -4px #d1d5db
     }
     .follower img {
         width: 4rem;
@@ -72,12 +73,11 @@ const Wrapper = styledComponents.section`
     }
     .section-title::after{
         content:'FOLLOWERS';
-        color: #a3a3a3;
         position: relative;
         bottom: 1.6rem;
         background-color: white;
-        padding: .2rem 1rem;
-        font-weight: 500;
+        padding: .5rem 1.6rem;
+        font-weight: 600;
         box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);
         -webkit-box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);
         -moz-box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);

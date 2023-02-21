@@ -8,7 +8,6 @@ const Card = () => {
     const { name, login, avatar_url, html_url, blog, location, company, bio } = githubUser;
     return ( 
         <Wrapper className="scroll-div">
-            <div className="section-title"></div>
             <div className="user-intro z-50 h-[30%]">
                 <div className="flex items-center gap-x-4">
                     <img className="hove:ring-[2px] ring-offset-2 ring-offset-white" src={avatar_url} alt={name} />
@@ -42,7 +41,7 @@ const Wrapper = styledComponents.section`
     width: 100%;
     background-color: white;
     padding: 1rem;
-    box-shadow: 0rem 0rem .4rem .1rem #f1f1f1;
+    border-radius: 1rem;
     .user-intro{
         display:flex;
         align-items: center;
@@ -57,9 +56,9 @@ const Wrapper = styledComponents.section`
         font-weight: 500;
         background: #10b981;
         color: white;
-        border: 1px solid #10b981;
+        border: 2px solid #10b981;
         padding: .3rem 1.4rem;
-        border-radius: 2rem;
+        border-radius: .4rem;
         transition: ease .2s
     }
     .user-intro button:hover{
@@ -92,13 +91,12 @@ const Wrapper = styledComponents.section`
     }
     .section-title::after{
         content:'USER';
-        color: #a3a3a3;
         position: relative;
         bottom: 2.6rem;
         right: 1rem;
         background-color: white;
-        padding: .2rem 1rem;
-        font-weight: 500;
+        padding: .5rem 1.6rem;
+        font-weight: 600;
         box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);
         -webkit-box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);
         -moz-box-shadow: 0px -3px 10px -4px rgba(51,51,51,0.1);

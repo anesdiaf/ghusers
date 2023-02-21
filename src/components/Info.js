@@ -9,7 +9,7 @@ const Info = () => {
     return ( 
         <Wrapper>
             <div className="info-item">
-                <button className="bg-blue-100 text-blue-500 text-3xl p-3 rounded-lg"><IoFolderOpen/></button>
+                <button className="bg-blue-100 text-blue-500 text-3xl p-3 rounded-2xl"><IoFolderOpen/></button>
                 <div className="info-data">
                     <p className="numbers">{public_repos}</p>
                     <p>Repos</p>
@@ -59,15 +59,14 @@ const Wrapper = styledComponents.section`
         grid-template-columns: 1fr;
     }
     .info-item{
-        padding: .4rem 1rem;
+        padding: .4rem .6rem;
         display: flex;
         flex-direction: row;
         gap: 0 1.4rem;
         align-items: center;
         background-color: white;
-        border-radius: .4rem;
+        border-radius: 1rem;
         break-inside: avoid;
-        box-shadow: 0rem 0rem .8rem .1rem #f1f1f1;
         cursor: default
     }
     button{
@@ -79,7 +78,8 @@ const Wrapper = styledComponents.section`
     }
     .info-data > p.numbers {
         color: #272f35;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        font-weight: 600
     }
     .info-data > p{
         color: #a3a3a3;
