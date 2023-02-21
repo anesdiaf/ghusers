@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from "react";
 import { useEffect } from "react";
-import {IoArrowForward, IoClose, IoLogoGithub, IoPerson, IoPersonOutline} from "react-icons/io5";
+import {IoArrowForward, IoClose, IoLogoGithub, IoPersonOutline} from "react-icons/io5";
 
 
 const Navbar = () => {
